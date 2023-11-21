@@ -70,6 +70,12 @@
             <version>0.8.7</version> <!-- Укажите актуальную версию JaCoCo -->
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11-beta-1</version>
+            <scope>test</scope>
+        </dependency>
 
     </dependencies>
     <properties>

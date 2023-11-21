@@ -14,11 +14,14 @@ import static org.junit.jupiter.api.Assertions.*;
 class WorkerWithListTest {
 
     WorkerWithList worker;
+
+    //Перед проведением каждого теста мы обнуляем экземпляр класса, чтобы добиться изолированности
     @BeforeEach
     void setUp() {
         worker = new WorkerWithList();
     }
 
+    // Данный тест проверяет метод определения среднего значения, а именно, правильно ли он вычисляет конечный результат
     @Test
     void averageValue() {
         ArrayList array = new ArrayList(2);
@@ -28,6 +31,7 @@ class WorkerWithListTest {
 
     }
 
+    // Данный тест проверяет метод на выдачу верного кода при условии, что среднее значение первого списка больше
     @Test
     void compareTwoValuesFirstBigger() {
         ArrayList array1 = new ArrayList<Integer>(2);
@@ -40,6 +44,7 @@ class WorkerWithListTest {
 
     }
 
+    // Данный тест проверяет метод на выдачу верного кода при условии, что среднее значения спискв равны
     @Test
     void compareTwoValueDraw() {
         ArrayList array1 = new ArrayList(2);
